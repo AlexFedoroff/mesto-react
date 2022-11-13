@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/mesto-react/static/css/main.5fc0d301.css",
+    "main.js": "/mesto-react/static/js/main.28bc4924.js",
+    "static/js/787.5530211c.chunk.js": "/mesto-react/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium-slnt=0.ttf": "/mesto-react/static/media/Inter-Medium-slnt=0.f958c681d7293226a319.ttf",
+    "static/media/Inter-Black-slnt=0.ttf": "/mesto-react/static/media/Inter-Black-slnt=0.54c4088fddcfe5fabaca.ttf",
+    "static/media/Inter-Regular-slnt=0.ttf": "/mesto-react/static/media/Inter-Regular-slnt=0.9cd7588f47651215d52f.ttf",
+    "static/media/Inter-Black-slnt0.woff": "/mesto-react/static/media/Inter-Black-slnt0.b1e7281df07f78cc11fc.woff",
+    "static/media/Inter-Medium-slnt_0.woff": "/mesto-react/static/media/Inter-Medium-slnt_0.473fff4497741ac1b7fe.woff",
+    "static/media/Inter-Regular-slnt0.woff": "/mesto-react/static/media/Inter-Regular-slnt0.fecd0c9aa268b5e42e22.woff",
+    "static/media/Inter-Black-slnt0.woff2": "/mesto-react/static/media/Inter-Black-slnt0.b39ce68490b9228057f6.woff2",
+    "static/media/Inter-Medium-slnt=0.woff2": "/mesto-react/static/media/Inter-Medium-slnt=0.0c1cf89fc02c2830541b.woff2",
+    "static/media/Inter-Regular-slnt0.woff2": "/mesto-react/static/media/Inter-Regular-slnt0.b3721ed9e9afa28ebb09.woff2",
+    "static/media/logo.svg": "/mesto-react/static/media/logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
+    "index.html": "/mesto-react/index.html",
+    "static/media/trash.svg": "/mesto-react/static/media/trash.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/Edit_Button320.svg": "/mesto-react/static/media/Edit_Button320.2f7be95ab48bbff7d88c.svg",
+    "static/media/Add_Button320.svg": "/mesto-react/static/media/Add_Button320.6f86ece55e54220c5485.svg",
+    "static/media/Add_Button.svg": "/mesto-react/static/media/Add_Button.6f41966c71dd7895857f.svg",
+    "static/media/Edit_button.svg": "/mesto-react/static/media/Edit_button.a1892ea72cb87c8fc3aa.svg",
+    "static/media/avatar-edit-icon.svg": "/mesto-react/static/media/avatar-edit-icon.a086f758840ae814ecde.svg",
+    "static/media/Close_Icon.svg": "/mesto-react/static/media/Close_Icon.2ceb783afbab75916ddc.svg",
+    "main.5fc0d301.css.map": "/mesto-react/static/css/main.5fc0d301.css.map",
+    "main.28bc4924.js.map": "/mesto-react/static/js/main.28bc4924.js.map",
+    "787.5530211c.chunk.js.map": "/mesto-react/static/js/787.5530211c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fc0d301.css",
+    "static/js/main.28bc4924.js"
+  ]
+}
