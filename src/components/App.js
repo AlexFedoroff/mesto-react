@@ -27,8 +27,7 @@ function App() {
   }
 
   function handleCardClick(card) {
-    setSelectedCard(card)
-    console.log(selectedCard);
+    setSelectedCard(card)    
   }
 
   function closeAllPopups() {      
@@ -39,7 +38,7 @@ function App() {
   }
 
   return (
-    <div className="root">
+    <div>
       <Header />
       <Main 
         onEditProfileClick={handleEditProfileClick}
@@ -65,7 +64,7 @@ function App() {
       </PopupWithForm>
 
       <PopupWithForm name="edit-avatar" title="Обновить аватар" isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} saveBtnText="Сохранить">
-        <input type="url" name="avatarLink" value="" placeholder="Ссылка на картинку" className="popup__field popup__field_avatar-url" id="avatar-field" required/>
+        <input type="url" name="avatarLink" defaultValue="" placeholder="Ссылка на картинку" className="popup__field popup__field_avatar-url" id="avatar-field" required/>
         <span className="popup__error popup__error_avatar-field"></span>
       </PopupWithForm>    
     

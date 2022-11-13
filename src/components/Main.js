@@ -22,6 +22,9 @@ function Main(props) {
         setUserAvatar(userData.avatar);
         setCards(cards);        
      })
+     .catch((err) => {
+      console.log(err);
+    })
   }, [])
 
   return (
@@ -43,6 +46,7 @@ function Main(props) {
       {cards.map((card) => (
         <Card           
           card={card} 
+          key={card._id}
           onCardClick={props.onCardClick}
         />
       ))}
