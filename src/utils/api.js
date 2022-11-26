@@ -51,7 +51,7 @@ class Api {
     }
     
     //Добавление фото
-    addCard(cardInfo) {
+    addCard(cardInfo) {      
       return fetch(`${this._address}/cards`, {
         method: "POST",
         headers: this._headers,
@@ -76,40 +76,29 @@ class Api {
       });
     }
 
-    //Поставить лайк
-    doLike(cardId) {
+    toggleLike(cardId, isLiked) {
+      const methodName = (isLiked ? 'DELETE' : 'PUT');      
       return fetch(`${this._address}/cards/${cardId}/likes`, {
-        method: "PUT",
+        method: methodName,
         headers: this._headers,
       })
       .then((res) => {
         return this._checkRes(res);
       });
     }
-
-    //Снять лайк
-    undoLike(cardId) {
-      return fetch(`${this._address}/cards/${cardId}/likes`, {
-        method: "DELETE",
+  
+  //Изменение аватара
+    editAvatar(data) {
+      return fetch(`${this._address}/users/me/avatar`, {
+        method: "PATCH",
         headers: this._headers,
+        body: JSON.stringify({
+          avatar: data.avatar,
+        }),
       })
       .then((res) => {
         return this._checkRes(res);
       });
-  }
-  
-  //Изменение аватара
-  editAvatar(data) {
-    return fetch(`${this._address}/users/me/avatar`, {
-      method: "PATCH",
-      headers: this._headers,
-      body: JSON.stringify({
-        avatar: data.avatarLink,
-      }),
-    })
-    .then((res) => {
-      return this._checkRes(res);
-    });
   }
 }
 
