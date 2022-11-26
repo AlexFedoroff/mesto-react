@@ -18,9 +18,11 @@ function App() {
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setAddPlacePopupOpen] = useState(false);
   const [isConfirmPopupOpen, setConfirmPopupOpen] = useState(false);
+  const [isImagePopupOpen, setImagePopupOpen] = useState(false);
   const [loaderState, setLoader] = useState({isOpen:true});
+  
   const [selectedCard, setSelectedCard] = useState(null);
-  const [selectedCardForDelete, setSelectedCardForDelete] = useState(null);
+  const [selectedCardForDelete, setSelectedCardForDelete] = useState(null);  
   const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);  
   const [isDataRetrieving, setIsDataRetrieving] = useState(false);
@@ -39,8 +41,9 @@ function App() {
 
   function handleCardClick(card) {
     setSelectedCard(card)    
+    setImagePopupOpen(!isImagePopupOpen);
   }
-
+  
   function handleUpdateAvatar(data) {
     setIsDataRetrieving(true);
     Api
@@ -94,7 +97,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       })
-    closeAllPopups();
+      .finally(()=>closeAllPopups());
   }
 
   function handleAddPlace(data) {
@@ -123,6 +126,7 @@ function App() {
     setEditAvatarPopupOpen(false);
     setAddPlacePopupOpen(false);
     setSelectedCard(null);
+    setImagePopupOpen(false);
     setConfirmPopupOpen(false);
   }
 
@@ -183,7 +187,7 @@ function App() {
           onSubmit={handleCardDelete} 
           onClose={closeAllPopups} />
         
-      <ImagePopup card={selectedCard} onClose={closeAllPopups}/>
+      <ImagePopup card={selectedCard} isOpen={isImagePopupOpen} onClose={closeAllPopups}/>
     </div>
   </CurrentUserContext.Provider>
   );

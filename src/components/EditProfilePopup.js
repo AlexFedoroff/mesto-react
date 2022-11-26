@@ -11,10 +11,10 @@ function EditProfilePopup(props) {
     if (currentUser.name) {
       setName(currentUser.name);
     }
-    if (currentUser.description){
+    if (currentUser.about){
       setDescription(currentUser.about);  
     }
-  }, [currentUser]);
+  }, [currentUser,props.isOpen]);
 
   function handleChange(e) {    
     e.target.name === 'name' ? setName(e.target.value) : setDescription(e.target.value);
